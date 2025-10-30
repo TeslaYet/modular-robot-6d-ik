@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+# Keep generated datasets and models for reproduction
+# ik_seed_dataset_*.npz
+# ik_seed_model_*.pth
+
+# Temporary test files
+test_*.png
+*.tmp
+
+# ROS/URDF artifacts (if regenerated)
+urdf/robot_dh.urdf
+urdf/robot_modular*.urdf
+
+# Logs
+*.log
+

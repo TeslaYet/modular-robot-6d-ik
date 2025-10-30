@@ -1,0 +1,10 @@
+HYBRID SOLVER AMÉLIORÉ - RÉSULTATS
+==================================================
+
+Model: 128-128 MLP
+Dataset: 10k samples
+MLP Error: 13.77°
+DLS Iterations: 300
+
+PERFORMANCE:
+  Speedup: 1.55×

@@ -1,0 +1,15 @@
+# Core dependencies (required)
+numpy>=1.23.0
+matplotlib>=3.7.0
+
+# Optional: ML acceleration
+torch>=2.0.0
+tqdm>=4.65.0
+
+# Optional: Vision integration (future)
+# opencv-python>=4.8.0
+# ultralytics>=8.0.0
+
+# Development/testing only
+# pytest>=7.4.0
+
