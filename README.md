@@ -57,7 +57,7 @@ q_solution = inverse_kinematics_dls(config, target_pos, R_target)
 print(f"Joint angles: {q_solution}")
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ProjetFilRouge/
