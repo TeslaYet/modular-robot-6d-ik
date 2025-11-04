@@ -2,26 +2,26 @@
 
 Production-ready 6D IK solver for modular robotic arms with vision integration capabilities.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This system provides:
-- ✅ **Validated 6D IK solver** (position + orientation control)
-- ✅ **Module catalog** with 5 pre-validated robot configurations
-- ✅ **Sub-5mm position accuracy, <1° orientation accuracy**
-- ✅ **Ready for vision integration** (YOLO + depth estimation)
-- ✅ **Optional ML acceleration** (experimental hybrid solver)
+-  **Validated 6D IK solver** (position + orientation control)
+-  **Module catalog** with 5 pre-validated robot configurations
+-  **Sub-5mm position accuracy, <1° orientation accuracy**
+-  **Ready for vision integration** (YOLO + depth estimation)
+-  **Optional ML acceleration** (experimental hybrid solver)
 
-## 📊 Performance Highlights
+##  Performance Highlights
 
 | Robot Set | Position Error | Orientation Error | Use Case |
 |-----------|---------------|-------------------|----------|
-| **Set D** (Extended) | **0.4mm** ⭐ | <0.001° | Best precision, large workspace |
-| **Set A** (Full 6D) | **2.4mm** ⭐ | <0.001° | General purpose, vision-guided |
-| **Set E** (Compact) | **4.3mm** ⭐ | <0.001° | Tight spaces, desktop |
+| **Set D** (Extended) | **0.4mm**  | <0.001° | Best precision, large workspace |
+| **Set A** (Full 6D) | **2.4mm**  | <0.001° | General purpose, vision-guided |
+| **Set E** (Compact) | **4.3mm**  | <0.001° | Tight spaces, desktop |
 
 Validated against industrial standards (UR5, PUMA560).
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -62,8 +62,8 @@ print(f"Joint angles: {q_solution}")
 ```
 ProjetFilRouge/
 ├── Core IK Solver
-│   ├── dls_ik_baseline.py          # ⭐ Main DLS IK solver (production)
-│   ├── module_catalog.py           # ⭐ Pre-validated robot configurations
+│   ├── dls_ik_baseline.py          #  Main DLS IK solver (production)
+│   ├── module_catalog.py           #  Pre-validated robot configurations
 │   └── dh_utils (2).py             # DH parameter generator
 │
 ├── Validation & Testing
@@ -93,7 +93,7 @@ ProjetFilRouge/
     └── hybrid_*.png                # ML experiment results
 ```
 
-## 🧪 Validation & Testing
+##  Validation & Testing
 
 ### Validate Catalog Sets
 ```bash
@@ -113,7 +113,7 @@ python visualize_catalog_results.py
 ```
 Creates publication-quality 3D plots of IK results.
 
-## 🧠 ML Acceleration (Optional - Requires GPU)
+##  ML Acceleration (Optional - Requires GPU)
 
 ### PoC Pipeline (5k samples, 64-64 model)
 ```bash
@@ -145,13 +145,13 @@ python test_hybrid_solver_improved.py
 - Accuracy: 5mm (acceptable)
 - **Status**: Experimental - pure DLS recommended for production
 
-## 📖 Documentation
+##  Documentation
 
 - **TECHNICAL_DOCUMENTATION.md**: Complete technical reference (46KB, English)
 - **DOCUMENTATION_TECHNIQUE.md**: Complete technical reference (34KB, French)
 - **SOLUTION_RESUME.md**: Executive summary for stakeholders
 
-## 🔧 Module Catalog
+##  Module Catalog
 
 5 pre-validated robot configurations:
 
@@ -160,7 +160,7 @@ python test_hybrid_solver_improved.py
 - **Reach**: 0.64m
 - **Use**: Vision-guided pick-and-place
 
-### Set D: Extended Reach ⭐ (Best)
+### Set D: Extended Reach  (Best)
 - **Performance**: 0.4mm position, <0.001° orientation
 - **Reach**: 0.77m
 - **Use**: Large workspace, maximum precision
@@ -180,7 +180,7 @@ python test_hybrid_solver_improved.py
 - **Reach**: 0.51m (planar)
 - **Use**: High-speed horizontal assembly
 
-## 🎨 Visualizations Included
+##  Visualizations Included
 
 The repository includes pre-generated validation visualizations:
 - `catalog_SET_*_visualization.png`: Individual set validations
@@ -188,7 +188,7 @@ The repository includes pre-generated validation visualizations:
 - `SET_D_roundtrip_*.png`: 100-test validation results
 - `hybrid_solver_*.png`: ML experiment results
 
-## 🔬 Technical Details
+##  Technical Details
 
 ### IK Method: Damped Least Squares (DLS)
 
@@ -215,7 +215,7 @@ For full 6D control, last 3 joints must form spherical wrist:
 
 Random module combinations typically have σmin < 0.02 → catalog approach essential.
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### High Position Errors
 - Check if target is reachable: `||target|| < 0.95 × reach`
@@ -227,22 +227,22 @@ Random module combinations typically have σmin < 0.02 → catalog approach esse
 - Check σmin(Jori) > 0.7
 - Use catalog sets (validated geometries)
 
-## 📚 Citation
+##  Citation
 
 If you use this work, please reference:
 - Nakamura & Hanafusa (1986): DLS formulation
 - Siciliano et al. (2009): Cross-product orientation error
 
-## 🤝 Contributing
+##  Contributing
 
 Current maintainer: Rayan
 Original DH generator: Colleague
 
-## 📄 License
+##  License
 
 [Add your license here]
 
-## 🔮 Future Work
+##  Future Work
 
 - [ ] Real-time vision integration (YOLO + monocular depth)
 - [ ] Obstacle avoidance with path planning
@@ -252,7 +252,7 @@ Original DH generator: Colleague
 
 ---
 
-**Status**: Production-Ready ✅  
+**Status**: Production-Ready   
 **Version**: 1.0  
 **Last Updated**: October 30, 2025
 
